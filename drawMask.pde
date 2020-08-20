@@ -23,10 +23,10 @@ void setup(){
 
 
 void draw(){
-  background(255);
+  background(0,255,255);
   
   //DRAW RECT//
-  fill(0);
+  fill(255);
   noStroke();
   beginShape();
   vertex(rectangle[0].x, rectangle[0].y);
@@ -43,10 +43,11 @@ void draw(){
   //DRAW TEXT//
   textAlign(CENTER);
   textSize(30);
-  fill(255,0,255);
+  fill(0);
   text(command[index],width/2, height/2);
   
   //DRAW POINTER//
+  fill(50,0,255);
   ellipse(mouseX,mouseY,5,5);
 }
 
